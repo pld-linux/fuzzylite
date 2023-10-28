@@ -5,7 +5,7 @@
 Summary:	A Fuzzy Logic Control Library in C++
 Name:		fuzzylite
 Version:	6.0
-Release:	0.1
+Release:	1
 License:	GPL v3
 Group:		Libraries
 Source0:	https://github.com/fuzzylite/fuzzylite/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
