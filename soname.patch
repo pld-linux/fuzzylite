@@ -1,0 +1,20 @@
+--- fuzzylite-6.0/fuzzylite/CMakeLists.txt~	2023-10-28 23:30:40.000000000 +0200
++++ fuzzylite-6.0/fuzzylite/CMakeLists.txt	2023-10-28 23:31:30.337292953 +0200
+@@ -169,14 +169,14 @@
+     set_target_properties(fl-shared PROPERTIES OUTPUT_NAME fuzzylite)
+     set_target_properties(fl-shared PROPERTIES DEBUG_POSTFIX -debug)
+     target_compile_definitions(fl-shared PRIVATE FL_EXPORT_LIBRARY)
+-    set_target_properties(fl-shared PROPERTIES VERSION 6.0)
++    set_target_properties(fl-shared PROPERTIES VERSION 6.0 SOVERSION 6)
+     target_link_libraries(fl-shared ${FL_LIBS})
+ endif()
+ 
+ if(FL_BUILD_STATIC)
+-    set_target_properties(fl-static PROPERTIES OUTPUT_NAME fuzzylite-static)
++    set_target_properties(fl-static PROPERTIES OUTPUT_NAME fuzzylite)
+     set_target_properties(fl-static PROPERTIES DEBUG_POSTFIX -debug)
+-    set_target_properties(fl-static PROPERTIES VERSION 6.0)
++    set_target_properties(fl-static PROPERTIES VERSION 6.0 SOVERSION 6)
+     target_link_libraries(fl-static ${FL_LIBS})
+ endif()
+ 

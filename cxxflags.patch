@@ -1,0 +1,13 @@
+--- fuzzylite-6.0/fuzzylite/CMakeLists.txt~	2017-03-26 11:40:17.000000000 +0200
++++ fuzzylite-6.0/fuzzylite/CMakeLists.txt	2023-10-28 23:11:29.422539865 +0200
+@@ -72,10 +72,6 @@
+ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
+ 
+ if(NOT MSVC)
+-#TODO: Remove -Werror before release.
+-#Add Unix compilation flags
+-    set(CMAKE_CXX_FLAGS "-pedantic -Wall -Wextra -Werror ${CMAKE_CXX_FLAGS}")
+-
+     set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG}")
+     set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
+ 
